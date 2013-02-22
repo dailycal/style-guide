@@ -38,7 +38,7 @@ Read more about multi-line comment style on the [inline documentation page on th
 
 ### Indentation: Tabs vs Spaces
 
-```
+```bash
 $ ack -c --type=php "\t" | awk -F : '{t+=$2}END{print t}'
 5225
 $ ack -c --type=php "    " | awk -F : '{t+=$2}END{print t}'
@@ -180,7 +180,7 @@ if ($foo instanceof A) bar();
 
 ### Else vs Else If
 
-```
+```bash
 $ ack -c --type=php "elseif" | awk -F : '{t+=$2}END{print t}'
 36
 $ ack -c --type=php "else if" | awk -F : '{t+=$2}END{print t}'
