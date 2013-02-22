@@ -38,10 +38,12 @@ Read more about multi-line comment style on the [inline documentation page on th
 
 ### Indentation: Tabs vs Spaces
 
-    $ ack -c --type=php "\t" | awk -F : '{t+=$2}END{print t}'
-    5225
-    $ ack -c --type=php "    " | awk -F : '{t+=$2}END{print t}'
-    981
+```
+$ ack -c --type=php "\t" | awk -F : '{t+=$2}END{print t}'
+5225
+$ ack -c --type=php "    " | awk -F : '{t+=$2}END{print t}'
+981
+```
 
 **Both tabs and spaces** are used to indent in `main-theme`. Whichever one you choose to use, make sure your text editor displays **4 spaces per tab-stop**. 
 
